@@ -443,7 +443,7 @@ const usersRoster = [
 //
 // arrayList(cars);
 
- // const exchange = (sumUAH, exchange, currency = [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}]) => {
+// const exchange = (sumUAH, exchange, currency = [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}]) => {
 //     if (currency[0]['currency'] === exchange) {
 //         return sumUAH / currency[0]['value'];
 //     } else if (currency[1]['currency'] === exchange) {
@@ -596,13 +596,13 @@ const usersRoster = [
 //
 // usersRoster.every()
 
-function User(id, name, surname, email, phone) {
-        this.id = id;
-        this.name = name;
-        this.surname = surname;
-        this.email = email;
-        this.phone = phone;
-}
+// function User(id, name, surname, email, phone) {
+//         this.id = id;
+//         this.name = name;
+//         this.surname = surname;
+//         this.email = email;
+//         this.phone = phone;
+// }
 
 // class UserClass {
 //     constructor(id, name, surname, email, phone) {
@@ -614,7 +614,7 @@ function User(id, name, surname, email, phone) {
 //     }
 // }
 
-let users = [];
+// let users = [];
 
 // let user1 = new User(1, 'Vlad', 'Ryabich', 'vlad2253@gmail.com', '+380673842720');
 // let user2 = new User(2, 'Olia', 'Ryabich', 'olia2253@gmail.com', '+380673422351');
@@ -628,17 +628,17 @@ let users = [];
 // let user10 = new User(10, 'Bogdana', 'Odnovol', 'bodya2253@gmail.com', '+380679584736');
 // Users.push(user1, user2, user3, user4, user5, user6, user7, user8, user9, user10);
 
-users.push(
-    new User(5, 'Vlad', 'Ryabich', 'vlad2253@gmail.com', '+380673842720'),
-    new User(1, 'Olia', 'Ryabich', 'olia2253@gmail.com', '+380673422351'),
-    new User(8, 'Dasha', 'Shtok', 'dasha2253@gmail.com', '+380678349012'),
-    new User(4, 'Linda', 'Zadorozhna', 'linad2253@gmail.com', '+380671123123'),
-    new User(7, 'Bogdan', 'Shevchenko', 'bogdan2253@gmail.com', '+380679952845'),
-    new User(3, 'Sergiy', 'Kovtun', 'serg2253@gmail.com', '+38067909357'),
-    new User(2, 'Oleg', 'Kravchenko', 'olef2253@gmail.com', '+380672354312'),
-    new User(10, 'Yulia', 'Mazur', 'yulia2253@gmail.com', '+380678590635'),
-    new User(6, 'Andriy', 'Nimchenko', 'andre2253@gmail.com', '+380670697835'),
-    new User(9, 'Bogdana', 'Odnovol', 'bodya2253@gmail.com', '+380679584736'));
+// users.push(
+//     new User(5, 'Vlad', 'Ryabich', 'vlad2253@gmail.com', '+380673842720'),
+//     new User(1, 'Olia', 'Ryabich', 'olia2253@gmail.com', '+380673422351'),
+//     new User(8, 'Dasha', 'Shtok', 'dasha2253@gmail.com', '+380678349012'),
+//     new User(4, 'Linda', 'Zadorozhna', 'linad2253@gmail.com', '+380671123123'),
+//     new User(7, 'Bogdan', 'Shevchenko', 'bogdan2253@gmail.com', '+380679952845'),
+//     new User(3, 'Sergiy', 'Kovtun', 'serg2253@gmail.com', '+38067909357'),
+//     new User(2, 'Oleg', 'Kravchenko', 'olef2253@gmail.com', '+380672354312'),
+//     new User(10, 'Yulia', 'Mazur', 'yulia2253@gmail.com', '+380678590635'),
+//     new User(6, 'Andriy', 'Nimchenko', 'andre2253@gmail.com', '+380670697835'),
+//     new User(9, 'Bogdana', 'Odnovol', 'bodya2253@gmail.com', '+380679584736'));
 
 // console.log(Users);
 
@@ -660,39 +660,92 @@ users.push(
 //
 // console.log(new SuperUser(11, 'Vlad', 'Kolisnik', 'vlad@gmail.com', 43533214, 'WhatIsLove', 'tu75qwe13'));
 
-class Client extends User{
-    constructor(id, name, surname, email, phone, order) {
-        super(id, name, surname, email, phone);
-        this.order = order;
-    }
-}
+// class Client extends User{
+//     constructor(id, name, surname, email, phone, order) {
+//         super(id, name, surname, email, phone);
+//         this.order = order;
+//     }
+// }
+//
+// let clients = [];
+// clients.push(
+//     new Client(5, 'Vlad', 'Ryabich', 'vlad2253@gmail.com', '+380673842720', ['marshmallow', 'block']),
+//     new Client(1, 'Olia', 'Ryabich', 'olia2253@gmail.com', '+380673422351', ['one', 'two', 'three']),
+//     new Client(8, 'Dasha', 'Shtok', 'dasha2253@gmail.com', '+380678349012', ['big', 'testy']),
+//     new Client(4, 'Linda', 'Zadorozhna', 'linad2253@gmail.com', '+380671123123', ['orange', 'apple', 'kiwi', 'chery']),
+//     new Client(7, 'Bogdan', 'Shevchenko', 'bogdan2253@gmail.com', '+380679952845', ['potato', 'morkow']),
+//     new Client(3, 'Sergiy', 'Kovtun', 'serg2253@gmail.com', '+38067909357', ['home', 'tree', 'car']),
+//     new Client(2, 'Oleg', 'Kravchenko', 'olef2253@gmail.com', '+380672354312', ['cash', 'money']),
+//     new Client(10, 'Yulia', 'Mazur', 'yulia2253@gmail.com', '+380678590635', ['water', 'bottle', 'fresh']),
+//     new Client(6, 'Andriy', 'Nimchenko', 'andre2253@gmail.com', '+380670697835', ['shoes', 'dress']),
+//     new Client(9, 'Bogdana', 'Odnovol', 'bodya2253@gmail.com', '+380679584736', ['football', 'basketball', 'voleiball']));
+//
+// let sortedClientsForOrderLength = clients.sort((a, b) => a.order.length - b.order.length);
+// console.log(sortedClientsForOrderLength);
 
-let clients = [];
-clients.push(
-    new Client(5, 'Vlad', 'Ryabich', 'vlad2253@gmail.com', '+380673842720', ['marshmallow', 'block']),
-    new Client(1, 'Olia', 'Ryabich', 'olia2253@gmail.com', '+380673422351', ['one', 'two', 'three']),
-    new Client(8, 'Dasha', 'Shtok', 'dasha2253@gmail.com', '+380678349012', ['big', 'testy']),
-    new Client(4, 'Linda', 'Zadorozhna', 'linad2253@gmail.com', '+380671123123', ['orange', 'apple', 'kiwi', 'chery']),
-    new Client(7, 'Bogdan', 'Shevchenko', 'bogdan2253@gmail.com', '+380679952845', ['potato', 'morkow']),
-    new Client(3, 'Sergiy', 'Kovtun', 'serg2253@gmail.com', '+38067909357', ['home', 'tree', 'car']),
-    new Client(2, 'Oleg', 'Kravchenko', 'olef2253@gmail.com', '+380672354312', ['cash', 'money']),
-    new Client(10, 'Yulia', 'Mazur', 'yulia2253@gmail.com', '+380678590635', ['water', 'bottle', 'fresh']),
-    new Client(6, 'Andriy', 'Nimchenko', 'andre2253@gmail.com', '+380670697835', ['shoes', 'dress']),
-    new Client(9, 'Bogdana', 'Odnovol', 'bodya2253@gmail.com', '+380679584736', ['football', 'basketball', 'voleiball']));
+// function Car(model, manufacture, year, maxSpeed, engineVolume) {
+//     this.model = model
+//     this.manufacture = manufacture
+//     this.year = year //`${year} рік` - Чи можлива так записти замість аргумениа year? Виводиться нормально, провірив
+//     this.maxSpeed = maxSpeed
+//     this.engineVolume = engineVolume
+//
+//     this.drive = function () {
+//         console.log(`Їдемо зі швидкістю ${this.maxSpeed} км на годину`);
+//     };
+//
+//     this.info = function () {
+//         for (const key in this) {
+//             if (this[key].constructor !== Function) {
+//                 console.log(`${key}: ${this[key]}`);
+//             }
+//         }
+//     };
+//
+//     this.increaseMaxSpeed = function (newSpeed) {
+//         if (newSpeed > 0) {
+//             this.maxSpeed = this.maxSpeed + newSpeed;
+//         }
+//     };
+//
+//     this.changeYear = function (newValue) {
+//         if (newValue > 1885) {
+//             this.year = newValue;
+//         }
+//     };
+//
+//     this.addDriver = function (driver, name, surname, age) {
+//         if (driver instanceof Object) {
+//             this.driver = {
+//                 name: name,
+//                 surname: surname,
+//                 age: age
+//             };
+//         }
+//     };
+// }
+//
+// let car = new Car('Qashqai', 'Nissan', 2021, 170, 2);
+//
+// car.drive();
+// car.info();
+// car.increaseMaxSpeed(20);
+// car.changeYear(2021);
+// car.addDriver({}, 'Vlad', 'Ryabich', 27); // Як правильно зробити об'єкт драйвер у функції?
+// console.log(car);
 
-let sortedClientsForOrderLength = clients.sort((a, b) => a.order.length - b.order.length);
-console.log(sortedClientsForOrderLength);
+// модальне вікно // (() => {
+//     const refs = {
+//         openModalBtn: document.querySelector("[data-modal-open]"),
+//         closeModalBtn: document.querySelector("[data-modal-close]"),
+//         modal: document.querySelector("[data-modal]"),
+//     };
+//
+//     refs.openModalBtn.addEventListener("click", toggleModal);
+//     refs.closeModalBtn.addEventListener("click", toggleModal);
+//
+//     function toggleModal() {
+//         refs.modal.classList.toggle("is-hidden");
+//     }
+// })();
 
-function CarInformation(model, manufacture, year, maxSpeed, engineVolume) {
-    this.model = model;
-    this.manufacture = manufacture;
-    this.year = year;
-    this.maxSpeed = maxSpeed;
-    this.engineVolume = engineVolume;
-
-    this.drive = function () {
-        console.log(`Їдемо зі швидкістю ${maxSpeed} на годину`)
-    };
-
-
-}
